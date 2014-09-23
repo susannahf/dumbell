@@ -3,11 +3,12 @@
 # you can then call dbplotLR() as a function
 # inputs are prevalence, and negative and positive likelihood ratios
 
-dbplotLR <- function(priors, negLR, posLR,lablmag=7,textsz=1){
+dbplotLR <- function(prevalence, negLR, posLR,lablmag=7,textsz=1){
 
 # post-test probabilities
-testnegs = 100 * (negLR * priors) / (1 - priors + (negLR * priors))
-testpos = 100 * (posLR * priors) / (1 - priors + (posLR * priors))
+testnegs = 100 * (negLR * prevalence) / (1 - prevalence + (negLR * prevalence))
+testpos = 100 * (posLR * prevalence) / (1 - prevalence + (posLR * prevalence))
+priors = 100 * prevalence
 
 # indices for y values
 idx = 1:length(priors)
