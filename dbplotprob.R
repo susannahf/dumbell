@@ -16,8 +16,8 @@ plot(priors,idx,type="p",col="blue", pch=16, xlim=c(0, 100), xlab="Probability (
 # plot lines
 for(i in idx) lines(x=c(testnegs[i], testpos[i]), y=c(i, i), type="l", lty=2)
 # plot testpos and testneg
-points(x=testpos,y=idx,type="p",col="green", pch=16)
-points(x=testnegs,y=idx,type="p",col="red",pch=16)
+points(x=testpos,y=idx,type="p",col="red", pch=16)
+points(x=testnegs,y=idx,type="p",col="green",pch=16)
 # plot priors again to overlay
 points(x=priors,y=idx,type="p",col="blue",pch=16)
 # add labels to y axis
