@@ -1,12 +1,9 @@
 # function for making dumbbell plots
 # to run the function, you first import it using source('dbplot.R')
-# you can then call dbplot() as a function
+# you can then call dbplotprob() as a function
+# inputs are priors (prevalence), probability after tests negative, and probability after testing positive.
 
-## example of how to load test data
-#setwd("H:/dumbbell plots")
-#dbdat=read.table("dbdata.csv",header=TRUE,sep=",")
-
-dbplot <- function(priors, testnegs, testpos,lablmag=7,textsz=1){
+dbplotprob <- function(priors, testnegs, testpos,lablmag=7,textsz=1){
 
 # indices for y values
 idx = 1:length(priors)
