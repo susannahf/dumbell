@@ -19,8 +19,11 @@ textsz is not currently used.
     
 *epitests.R*
 Contains one function: epitests(a,b,c,d,conf.level=0.95)
-This is the epi.tests function from an early version of epiR, which has now been changed to have different input format.  This input format is particularly useful in some circumstances, such as calculating likelihood ratios for input for dbplotLR, so I've preserved it.
-   
+This is the epi.tests function from an early version of epiR, which has now been changed to have different input format.  This input format is particularly useful in some circumstances, such as calculating likelihood ratios for input 
+for dbplotLR, so I've preserved it.
 
-Susannah Fleming - 27 Nov 2014
+*dbexample.R*
+Example code using dbplotLR.
+
+Susannah Fleming - 18 Dec 2014
 
